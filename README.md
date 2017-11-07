@@ -13,14 +13,12 @@ The issues faces by a reader of a bitcointalk [ANN] are
 The three issues outlined above outline the timeline of the project.
 The first challenge has been addressed and completed.
 
-Hence
-
 ### To Do.
 1. Remove the ads, annoying icons, user footers and mottos from the document
 2. Make the styling attractive and highly readible (think medium.com)
 
 
-### Install / Use
+## Install / Use
 
 #### Step 1.
 Create a new directory (folder) on your computer
