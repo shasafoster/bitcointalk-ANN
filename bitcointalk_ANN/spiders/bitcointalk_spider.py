@@ -10,6 +10,7 @@ pkl_file.close()
 crypto_currency = name_urls[0]
 urls = name_urls[1:2]  # *****Note*****
 
+
 class BitcointalkSpider(scrapy.Spider):
     name = "bitcointalk"
 

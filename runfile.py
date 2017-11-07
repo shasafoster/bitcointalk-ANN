@@ -1,7 +1,8 @@
 import pickle
-from bs4 import BeautifulSoup
-import urllib2
 from lxml import etree
+from fetch_css import *
+import urllib2
+from bs4 import BeautifulSoup
 
 # Prompt the user for input (via command prompt)
 crypto_currency = raw_input("Enter the name of the crypto economic protocol: ")
@@ -26,3 +27,8 @@ output = open(path, 'wb')
 pickle.dump(name_urls, output)
 output.close()
 
+# Extract the CSS of the bitcointalk webpage and write to file
+'---------------------------'
+print('Extracting CSS...')
+'---------------------------'
+write_css(crypto_currency, base_url)
