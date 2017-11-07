@@ -20,6 +20,11 @@ The first challenge has been addressed and completed.
 
 ## Install / Use
 
+#### Install packages
+Scrapy: https://scrapy.org/  $ pip install scrapy
+BeautifulSoup: https://www.crummy.com/software/BeautifulSoup/bs4/doc/ $ pip install beautifulsoup4
+lxml: http://lxml.de/installation.html $ pip install lxml
+
 #### Step 1.
 Create a new directory (folder) on your computer
 
