@@ -1,0 +1,1 @@
+BASE_URL = r'https://bitcointalk.org/index.php?topic=421615.0'
