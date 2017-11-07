@@ -31,12 +31,12 @@ Open the command propmt in this new directory
 
 #### Step 4. 
 Enter: $python runfile.py
-* * The command prompt will ask you to enter the name of the crpyto-currencies you want to create the [ANN] document for.*
-* * This command should take 1-3 seconds to run *
+* *The command prompt will ask you to enter the name of the crpyto-currencies you want to create the [ANN] document for.*
+* *This command should take 1-3 seconds to run*
 
 #### Step 5.
 Enter: $scrapy crawl bitcointalk
-* * This command will run the spider *
+* *This command will run the spider*
 * *This command will take much longer to run (it depends highly on the number of webpages the spider has to parse)*
 
 #### Step 6.
