@@ -15,7 +15,7 @@ class BitcointalkSpider(scrapy.Spider):
 
     def start_requests(self):
 
-        # Delete html file for the crypto-curency if exists
+        # Delete html file for the crypto-currency if exists
         try:
             base = r'C:\Users\Shasa\Documents\Projects\bitcointalk_ANN'
             path = os.path.join(base, (crypto_currency + r'.html'))

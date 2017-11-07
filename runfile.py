@@ -6,7 +6,7 @@ from lxml import etree
 # Prompt the user for input (via command prompt)
 crypto_currency = raw_input("Enter the name of the crypto economic protocol: ")
 
-# Get base url from coinmarketcap.com
+# Get base url for the bitcointalk [ANN] from coinmarketcap.com
 url = r'https://coinmarketcap.com/currencies/' + crypto_currency
 response = urllib2.urlopen(url)
 soup = BeautifulSoup(response, 'lxml')
