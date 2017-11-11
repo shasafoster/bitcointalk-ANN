@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d2adff-8b5e-4a65-9787-863ea02ad38c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Shasa.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitcointalk_ANN/helper.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcointalk_ANN/name_urls.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcointalk_ANN/spiders/add_css.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcointalk_ANN/spiders/fetch_css.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcointalk_ANN/spiders/name_urls.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pinkcoin.css" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/runfile.py" afterPath="$PROJECT_DIR$/bitcointalk_ANN/spiders/old_files/runfile.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitcointalk_ANN/items.py" afterPath="$PROJECT_DIR$/bitcointalk_ANN/items.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitcointalk_ANN/pipelines.py" afterPath="$PROJECT_DIR$/bitcointalk_ANN/pipelines.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitcointalk_ANN/settings.py" afterPath="$PROJECT_DIR$/bitcointalk_ANN/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spider.py" afterPath="$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spider.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fetch_css.py" afterPath="$PROJECT_DIR$/fetch_css.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runfile.py" afterPath="$PROJECT_DIR$/runfile.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,14 +24,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="runfile.py" pinned="false" current-in-tab="true">
+    <leaf>
+      <file leaf-file-name="runfile.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+            <state relative-caret-position="350">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -31,8 +40,8 @@
       <file leaf-file-name="bitcointalk_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="278">
+              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -40,14 +49,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fetch_css.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fetch_css.py">
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/helper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
-                <element signature="e#24#38#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="57" column="30" lean-forward="false" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proxy_list.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/proxy_list.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,13 +100,18 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>prox</find>
+      <find>RANDOM_UA_PER_PROXY</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bitcointalk_ANN/settings.py" />
         <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/get_urls.py" />
         <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/ANN_info.py" />
         <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/posts_spider.py" />
@@ -78,9 +122,25 @@
         <option value="$PROJECT_DIR$/ANN_runfile.py" />
         <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/ANN_runfile.py" />
         <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/fetch_css.py" />
-        <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spider.py" />
         <option value="$PROJECT_DIR$/fetch_css.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spiderV2.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spider_test.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/items.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/get_ann.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/run_file.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/urls.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/setup.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointal_spider.py" />
+        <option value="$PROJECT_DIR$/merge.py" />
+        <option value="$PROJECT_DIR$/run_file.py" />
+        <option value="$PROJECT_DIR$/urls.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/pipelines.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/merge.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/urls.py" />
         <option value="$PROJECT_DIR$/runfile.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/helper.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spider.py" />
+        <option value="$PROJECT_DIR$/bitcointalk_ANN/settings.py" />
       </list>
     </option>
   </component>
@@ -93,7 +153,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -106,42 +166,21 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="bitcointalk_ANN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitcointalk_ANN" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitcointalk_ANN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitcointalk_ANN" type="462c0819:PsiDirectoryNode" />
-              <item name="bitcointalk_ANN" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitcointalk_ANN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitcointalk_ANN" type="462c0819:PsiDirectoryNode" />
-              <item name="bitcointalk_ANN" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spider.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/My Documents" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="full.screen.before.presentation.mode" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Shasa\PycharmProjects\bitcointalk\bitcointalk_ANN\bitcointalk_ANN" />
+      <recent name="C:\Users\Shasa\PycharmProjects\bitcointalk\bitcointalk_ANN\bitcointalk_ANN\spiders" />
+      <recent name="C:\Users\Shasa\PycharmProjects\bitcointalk\bitcointalk_ANN\" />
       <recent name="C:\Users\Shasa\Documents\Projects\bitcointalk_ANN" />
-      <recent name="C:\Users\Shasa\Documents\Projects\bitcointalk_ANN\bitcointalk_ANN\spiders" />
+      <recent name="C:\Users\Shasa\PycharmProjects\bitcointalk\bitcointalk_ANN" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -155,6 +194,71 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Python.urls">
+    <configuration name="run_file (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bitcointalk_ANN" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_file.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="run_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bitcointalk_ANN/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bitcointalk_ANN" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bitcointalk_ANN/spiders/run_file.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="urls" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bitcointalk_ANN" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/urls.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.run_file" />
+      <item index="1" class="java.lang.String" itemvalue="Python.run_file (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.urls" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.urls" />
+        <item index="1" class="java.lang.String" itemvalue="Python.run_file (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.run_file" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -181,16 +285,16 @@
     <frame x="-11" y="-11" width="1942" height="1102" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.119791664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.119791664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935324" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -209,30 +313,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="add fetch_css.py" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/runfile.py">
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/old_files/bitcointalk_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1600">
+          <caret line="69" column="74" lean-forward="true" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/add_css.py" />
+    <entry file="file://$PROJECT_DIR$/runfile.py" />
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spider.py" />
+    <entry file="file://$PROJECT_DIR$/fetch_css.py" />
+    <entry file="file://$PROJECT_DIR$/runfile.py" />
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spider.py" />
     <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/posts_spider.py" />
     <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/tests_spider.py" />
     <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/posts_spider.py" />
@@ -248,13 +347,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/get_urls.py" />
-    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/ANN_info.py" />
     <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/urls_spider.py" />
     <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/spider_bitcointalk.py" />
@@ -263,41 +355,173 @@
     <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/posts_spider.py" />
     <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/ANN_runfile.py" />
     <entry file="file://$PROJECT_DIR$/ANN_runfile.py" />
-    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/fetch_css.py">
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/fetch_css.py" />
+    <entry file="file://$USER_HOME$/My Documents/bitcointalk_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="39" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetch_css.py" />
+    <entry file="file://$PROJECT_DIR$/add_css.py" />
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spiderV2.py" />
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/add_css.py" />
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/old_files/bitcointalk_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="69" column="74" lean-forward="false" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/old_files/posts_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spider_test.py" />
+    <entry file="file://$USER_HOME$/Documents/Projects/bitcointalk_ANN/get_ann.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/run_file.py" />
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/get_ann.py" />
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="63" lean-forward="true" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spider.py">
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="500">
+          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fetch_css.py">
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointal_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/merge.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#38#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        <state relative-caret-position="350">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/spiders/bitcointalk_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/proxy_list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcointalk_ANN/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="57" column="30" lean-forward="false" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

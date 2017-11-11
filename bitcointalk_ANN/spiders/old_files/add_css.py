@@ -81,4 +81,3 @@ def write_css(name, url):
         print "Error: URL not found!"
     else:
         print "No styles found for " + url + "n"
-

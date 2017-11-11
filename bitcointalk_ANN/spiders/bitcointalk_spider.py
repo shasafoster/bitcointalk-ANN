@@ -1,43 +1,39 @@
 import scrapy
-from bs4 import BeautifulSoup
-import os
 import pickle
+import re
+from collections import Counter
+from bitcointalk_ANN.items import PostsItem
 
-# Read in from pickled file
-pkl_file = open(r'C:\Users\Shasa\Documents\Projects\bitcointalk_ANN\bitcointalk_ANN\name_urls.pkl', 'rb')
-name_urls = pickle.load(pkl_file)
-pkl_file.close()
-crypto_currency = name_urls[0]
-urls = name_urls[1:2]  # *****Note*****
+
+with open('./bitcointalk_ANN/spiders/urls.pickle', 'rb') as handle:
+    urls = pickle.load(handle)
 
 
 class BitcointalkSpider(scrapy.Spider):
     name = "bitcointalk"
 
     def start_requests(self):
-
-        # Delete html file for the crypto-currency if exists
-        try:
-            base = r'C:\Users\Shasa\Documents\Projects\bitcointalk_ANN'
-            path = os.path.join(base, (crypto_currency + r'.html'))
-            os.remove(path)
-        except OSError:
-            pass
-
         # Parse urls
-        for url in urls:
-            yield scrapy.Request(url=url, callback=self.parse)
+        for i, url in enumerate(urls):
+            yield scrapy.Request(url=url, callback=self.parse,  meta={'page_number': i}, dont_filter=True)
 
     def parse(self, response):
 
-        # The posts from the webpage
+        # We only want user posts (no ads, deleted posts etc)
         table = response.xpath('//div[@id="bodyarea"]/form[@id="quickModForm"]/table')[0]
-        # posts = table.xpath('./tr')
+        rows = list(table.xpath('./tr'))
+        joined = ''.join([str(row) for row in rows])
+        results = re.findall(r'<tr class="[\w]+">', joined)
+        most_common_result = Counter(results).most_common()[0][0]
+        most_common_class= re.findall(r'"[\w]+"', most_common_result)[0].replace('"', '')
+        x_path = './tr[@class="' + most_common_class + '"]'
+        post_list = table.xpath(x_path)
+        posts = ''.join([post.extract()for post in post_list])
 
-        filename = crypto_currency + '.html'
-        with open(filename, 'a') as f:
-            f.write(BeautifulSoup(table.extract(), 'lxml').encode('utf8'))
-            # for post in posts:
-            # f.write(BeautifulSoup(post.extract(),'lxml').encode('utf8'))
-        f.close()
-        self.log('Saved file %s' % filename)
+        # Create PostsItem item and assign variables
+        posts_item = PostsItem()
+        posts_item['page_number'] = response.request.meta['page_number']
+        posts_item['posts'] = posts
+        yield posts_item
+
+
