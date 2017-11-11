@@ -4,6 +4,7 @@ from lxml import etree
 import pickle
 import os
 import glob
+import re
 
 
 def get_urls():
@@ -16,6 +17,10 @@ def get_urls():
     files = glob.glob(r'C:/Users/Shasa/PycharmProjects/bitcointalk/bitcointalk_ANN/bitcointalk_ANN/pages/*')
     for f in files:
         os.remove(f)
+    try:
+        os.remove(r'C:/Users/Shasa/PycharmProjects/bitcointalk/bitcointalk_ANN/crawl.log')
+    except WindowsError:
+        pass
 
     # Prompt the user for input (via command prompt)
     print ''
@@ -55,7 +60,7 @@ def get_urls():
     with open('./bitcointalk_ANN/spiders/urls.pickle', 'wb') as handle:
         pickle.dump(urls, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-    return crypto_currency
+    return num_pages, crypto_currency
 
 
 def merge(crypto_currency):
@@ -91,3 +96,12 @@ def merge(crypto_currency):
         main.write('</body>')
         main.write('</html>')
     main.close()
+
+
+def print_log():
+
+    with open('crawl.log','r') as f:
+        for line in f:
+            if "item_scraped_count': " in line:
+                count = re.findall(r"': [\d]+", line)
+    return count[0].replace("'", "").replace(":", "")

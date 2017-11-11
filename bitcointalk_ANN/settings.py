@@ -129,3 +129,9 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+STATS_ENABLED = True
+STATS_DUMP = True
+LOG_ENABLED = True
+LOG_FILE = 'crawl.log'
+LOG_STDOUT = False

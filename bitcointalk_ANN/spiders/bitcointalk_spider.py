@@ -36,4 +36,3 @@ class BitcointalkSpider(scrapy.Spider):
         posts_item['posts'] = posts
         yield posts_item
 
-
