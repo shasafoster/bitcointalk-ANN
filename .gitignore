@@ -1,0 +1,5 @@
+
+# Ignore pyc files as they are automatically created anyway
+*.pyc
+
+__pycache__
