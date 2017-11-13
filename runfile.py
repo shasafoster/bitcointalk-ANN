@@ -9,11 +9,11 @@ def script():
     process.crawl('bitcointalk')
     process.start()  # the script will block here until the crawling is finished
     merge(crypto_currency)
-    count = print_log()
+    #scraped_count = print_log()
     print('')
-    print '********************************************'
-    print('             ' + str(count) + ' pages scraped')
-    print '********************************************'
+    print('********************************************')
+    #print('             ' + str(scraped_count) + ' pages scraped')
+    print('********************************************')
 
 
 script()

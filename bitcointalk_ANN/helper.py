@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-import urllib2
+from urllib.request import urlopen
 from lxml import etree
 import pickle
 import os
@@ -23,23 +23,23 @@ def get_urls():
         pass
 
     # Prompt the user for input (via command prompt)
-    print ''
-    crypto_currency = raw_input("Enter the name of the crypto economic protocol: ").lower()
+    print('')
+    crypto_currency = input("Enter the name of the crypto economic protocol: ").lower()
     print(r'Parsing ' + r'"https://coinmarketcap.com/currencies/' + crypto_currency + r'"...')
-    print ''
+    print('')
     print('')
 
-    response = urllib2.urlopen(r'https://coinmarketcap.com/currencies/' + crypto_currency)
+    response = urlopen(r'https://coinmarketcap.com/currencies/' + crypto_currency)
     soup = BeautifulSoup(response, 'lxml')
     base_url = soup.find('a', href=True, text='Announcement')['href']
 
     print('The url of the first bitcointalk [ANN] thread is...')
     print(base_url)
-    print ''
+    print('')
     print('')
 
     # Extract the number of pages in the bitcointalk.com thread
-    forum_response = urllib2.urlopen(base_url)
+    forum_response = urlopen(base_url)
     html_parser = etree.HTMLParser()
     tree = etree.parse(forum_response, html_parser)
     index_table = tree.xpath('//div[@id="bodyarea"]/table')[0]
@@ -83,25 +83,24 @@ def merge(crypto_currency):
     page_paths = sorted(page_paths)
 
     # Add style html to crypto-currency html doc
-    with open('C:/Users/Shasa/Dropbox/ANN/' + crypto_currency + '.html', 'a') as main:
-        main.write('<html>')
+    with open("C:/Users/Shasa/Dropbox/ANN/" + crypto_currency + ".html", "a", encoding="utf-8") as main:
+        main.write("<html>")
         main.write(style)
 
-        main.write('<body>')
+        main.write("<body>")
         for path in page_paths:
-            with open(path, 'r') as f:
+            with open(path, "r", encoding="utf-8") as f:
                 content = f.read()
                 main.write(content)
             f.close()
-        main.write('</body>')
-        main.write('</html>')
+        main.write("</body>")
+        main.write("</html>")
     main.close()
 
 
-def print_log():
-
-    with open('crawl.log','r') as f:
-        for line in f:
-            if "item_scraped_count': " in line:
-                count = re.findall(r"': [\d]+", line)
-    return count[0].replace("'", "").replace(":", "")
+#def print_log():
+ #   with open('crawl.log', 'r', encoding='utf8') as f:
+  #      for line in f:
+   #         if "item_scraped_count': " in line:
+    #            count = re.findall(r"': [\d]+", line)
+     #           return count[0].replace("'", "").replace(":", "")
