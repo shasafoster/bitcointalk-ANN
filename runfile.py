@@ -4,16 +4,15 @@ from bitcointalk_ANN.helper import *
 
 
 def script():
-    num_pages, crypto_currency = get_urls()
+    num_of_thread_pages, crypto_currency = get_urls()
+
     process = CrawlerProcess(get_project_settings())
     process.crawl('bitcointalk')
     process.start()  # the script will block here until the crawling is finished
-    merge(crypto_currency)
-    #scraped_count = print_log()
-    print('')
-    print('********************************************')
-    #print('             ' + str(scraped_count) + ' pages scraped')
-    print('********************************************')
+
+    num_of_scraped_pages = merge(crypto_currency)
+
+    print_log(crypto_currency, num_of_thread_pages, num_of_scraped_pages)
 
 
 script()

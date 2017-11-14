@@ -5,6 +5,7 @@ import pickle
 import os
 import glob
 import re
+import sys
 
 
 def get_urls():
@@ -14,8 +15,8 @@ def get_urls():
     """
 
     # Delete all files in pages directory
-    files = glob.glob(r'C:/Users/Shasa/PycharmProjects/bitcointalk/bitcointalk_ANN/bitcointalk_ANN/pages/*')
-    for f in files:
+    old_pages = glob.glob(r'C:/Users/Shasa/PycharmProjects/bitcointalk/bitcointalk_ANN/bitcointalk_ANN/pages/*')
+    for f in old_pages:
         os.remove(f)
     try:
         os.remove(r'C:/Users/Shasa/PycharmProjects/bitcointalk/bitcointalk_ANN/crawl.log')
@@ -24,14 +25,30 @@ def get_urls():
 
     # Prompt the user for input (via command prompt)
     print('')
-    crypto_currency = input("Enter the name of the crypto economic protocol: ").lower()
-    print(r'Parsing ' + r'"https://coinmarketcap.com/currencies/' + crypto_currency + r'"...')
-    print('')
+    crypto_currency = input("Enter the name of the crypto:").lower()
+    choice = input('Enter own bitcointalk URL (Y/N): ')
     print('')
 
-    response = urlopen(r'https://coinmarketcap.com/currencies/' + crypto_currency)
-    soup = BeautifulSoup(response, 'lxml')
-    base_url = soup.find('a', href=True, text='Announcement')['href']
+    if choice == 'N':
+        print(r'Parsing ' + r'"https://coinmarketcap.com/currencies/' + crypto_currency + r'"...')
+        response = urlopen(r'https://coinmarketcap.com/currencies/' + crypto_currency)
+        soup = BeautifulSoup(response, 'lxml')
+        try:
+            base_url = soup.find('a', href=True, text='Announcement')['href']
+        except TypeError:
+            print('')
+            print('ERROR: Announcement URl not found on coinmarketcap.com')
+            print('Stopping script.')
+            print('')
+            sys.exit()
+
+    elif choice == 'Y':
+        base_url = input('Enter the url of the first page of the bitcointalk thread you want to parse')
+    else:
+        print('Incorrect input. Cancelling script')
+        print('')
+        sys.exit()
+    print('')
 
     print('The url of the first bitcointalk [ANN] thread is...')
     print(base_url)
@@ -44,23 +61,23 @@ def get_urls():
     tree = etree.parse(forum_response, html_parser)
     index_table = tree.xpath('//div[@id="bodyarea"]/table')[0]
 
-    num_pages = []
+    page_numbers = []
     for x in index_table.xpath('./tr/td/a/text()'):
         try:
-            num_pages.append(int(x))
+            page_numbers.append(int(x))
         except ValueError:
             pass
-    num_pages = max(num_pages)
-    urls = [base_url] + [base_url[:-1] + str(int(20 * (i - 1))) for i in range(2, num_pages + 1)]
+    num_of_thread_pages = max(page_numbers)
+    urls = [base_url] + [base_url[:-1] + str(int(20 * (i - 1))) for i in range(2, num_of_thread_pages + 1)]
 
-    print('This bitcointalk thread has ' + str(num_pages) + ' pages.')
+    print('This bitcointalk thread has ' + str(num_of_thread_pages) + ' pages.')
     print('')
     print('')
 
     with open('./bitcointalk_ANN/spiders/urls.pickle', 'wb') as handle:
         pickle.dump(urls, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-    return num_pages, crypto_currency
+    return num_of_thread_pages, crypto_currency
 
 
 def merge(crypto_currency):
@@ -81,6 +98,7 @@ def merge(crypto_currency):
     # Read in all .html files of the posts
     page_paths = glob.glob('C:/Users/Shasa/PycharmProjects/bitcointalk/bitcointalk_ANN/bitcointalk_ANN/pages/*.html')
     page_paths = sorted(page_paths)
+    number_of_pages = len(page_paths)
 
     # Add style html to crypto-currency html doc
     with open("C:/Users/Shasa/Dropbox/ANN/" + crypto_currency + ".html", "a", encoding="utf-8") as main:
@@ -97,10 +115,16 @@ def merge(crypto_currency):
         main.write("</html>")
     main.close()
 
+    return number_of_pages
 
-#def print_log():
- #   with open('crawl.log', 'r', encoding='utf8') as f:
-  #      for line in f:
-   #         if "item_scraped_count': " in line:
-    #            count = re.findall(r"': [\d]+", line)
-     #           return count[0].replace("'", "").replace(":", "")
+
+def print_log(crypto_currency, num_of_thread_pages, num_of_scraped_pages):
+    print('')
+    print('********************************************')
+    print('      Crypto: ' + crypto_currency.title())
+    print('********************************************')
+    print('      Pages in bitcointalk thread: ' + str(num_of_thread_pages))
+    print('********************************************')
+    print('      Pages scraped: ' + str(num_of_scraped_pages))
+    print('********************************************')
+    print('')
